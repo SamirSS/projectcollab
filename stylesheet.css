@@ -74,7 +74,7 @@ a{
 	top: 40%;
 	margin-right: 7.5%;
 	
-	font-family: Circe Rounded;
+	font-family: "circe-rounded",sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 38px;
@@ -90,7 +90,7 @@ a{
 	transform: translate(-50%, -50%);
 	width: 100%;
 
-	font-family: Circe Rounded;
+	font-family: "circe-rounded",sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
@@ -117,7 +117,7 @@ a{
 	left: 3.75%;
 	top: 2.5%;
 	
-	font-family: Circe Rounded;
+	font-family: "circe-rounded",sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
@@ -133,7 +133,7 @@ a{
 	top: -30%;
 	padding: -10%;
 	
-	font-family: Circe Rounded;
+	font-family: "circe-rounded",sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	line-height: 0.8em;
@@ -150,7 +150,7 @@ a{
 	top: 92.5%;
 	width: 100%;
 	
-	font-family: Circe;
+	font-family: "circe",sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
@@ -170,7 +170,7 @@ a{
 	top: 12%;
 	margin-right: 3.75%;
 	
-	font-family: Circe;
+	font-family: "circe",sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
@@ -275,7 +275,7 @@ a{
 		top: -30%;
 		padding: -10%;
 		
-		font-family: Circe Rounded;
+		font-family: "circe-rounded",sans-serif;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 0.8em;

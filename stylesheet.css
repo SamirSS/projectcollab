@@ -1,0 +1,288 @@
+/* general stuff for the whole page */
+*{
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	box-sizing: border-box;
+	outline: none !important;
+}
+
+html{ 
+    height: 100%; 
+}
+
+body{ 
+    background: #fff;
+    height: 100%;
+}
+
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+/* splits the page into my cool, hip half page ui thing */
+.left, .spotify_left, .left_half{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	
+	background: rgba(0, 0, 0, 0.83);
+}
+
+.right, .spotify_right, .right_half{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	top: 0%;
+	
+	background: #FF5A63;
+}
+
+.spotify_left{	
+	background: #6AE368;
+}
+
+.spotify_right{
+	background: rgba(0, 0, 0, 0.83);
+}
+
+
+/* text manipulation ~~ bulk of the aesthetic */
+a{
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.bold, .skip{
+	font-weight: 800;
+}
+
+.skip{
+	font-size: 28px;
+}
+
+.onboard{
+	position: absolute;
+	left: 7.5%;
+	top: 40%;
+	margin-right: 7.5%;
+	
+	font-family: Circe Rounded;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 38px;
+	font-size: 25px;
+	
+	color: #FF5A63;
+}
+
+.getstarted_text, .connectspotify_text, .start_text, .join_text{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+
+	font-family: Circe Rounded;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	font-size: 70px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.getstarted_text, .connectspotify_text{
+	font-size: 60px;
+}
+
+.start_text{
+	color: #FF5A63;
+}
+
+.join_text{
+	color: rgba(0, 0, 0, 0.83);
+}
+
+.logo{
+	position: absolute;
+	height: 60px;
+	left: 3.75%;
+	top: 2.5%;
+	
+	font-family: Circe Rounded;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	font-size: 50px;
+	
+	color: #FF5A63;
+}
+
+.error_text{
+	position: absolute;
+	height: 60px;
+	left: -15%;
+	top: -30%;
+	padding: -10%;
+	
+	font-family: Circe Rounded;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.8em;
+	font-size: 900px;
+	
+	color: #FF5A63;
+	
+	animation: 150s rollin linear infinite;
+}
+
+.footer, .footer_red{
+	position: absolute;
+	left: 3.75%;
+	top: 92.5%;
+	width: 100%;
+	
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 20px;
+	
+	color: #333333;
+}
+
+.footer_red{
+	color: #FF5A63;
+	top: 91.5%;
+}
+
+.desc{
+	position: absolute;
+	left: 3.75%;
+	top: 12%;
+	margin-right: 3.75%;
+	
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 25px;
+	
+	color: #FF5A63;
+}
+
+/* image manipulation */
+.ios_banner{
+	position: absolute;
+	top: 90%;
+	left: 3.75%;
+}
+
+/* props to "https://codepen.io/oknoblich/pen/vfJxr" for the help with the rolling 404s */
+@keyframes rollin {
+    0% { top: 0%; }
+  100% { top: -5000%; }
+}
+
+/* cool arrow stuff courtesy of "https://codepen.io/varystrategic/pen/zGrMQK" */
+.arrow {
+  position: fixed;
+  top: 50%;
+  left: 10;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border-top: .4rem solid rgba(0, 0, 0, 0.83);
+  border-right: .4rem solid rgba(0, 0, 0, 0.83);
+  box-shadow: 0 0 0 lightgray;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate3d(0, -50%, 0) rotate(-135deg);
+          transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrow:hover {
+  border-top: .4rem solid #FF5A63;
+  border-right: .4rem solid #FF5A63;
+  box-shadow: .2rem -.2rem 0 rgba(0, 0, 0, 0.83);
+  left: -.2rem;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 700px){
+	.left, .spotify_left, .left_half{
+		position: absolute;
+		height: 70%;
+		width: 100%;
+		left: 0%;
+		top: 0%;
+	}
+	
+	.right, .spotify_right, .right_half{
+		position: absolute;
+		height: 30%;
+		width: 100%;
+		top: 70%;
+		left: 0%;
+	}
+	
+	.left_half{
+		height: 50%;
+		
+	}
+	
+	.right_half{
+		height: 50%;
+		top: 50%;
+	}
+	
+	.desc{
+		position: absolute;
+		left: 3.75%;
+		top: 15%;
+	}
+	
+	.footer, .footer_red{
+		position: absolute;
+		left: 3.75%;
+		top: 87.5%;
+		width: 90%;
+		font-size: 18px;
+	}
+	
+	.footer_red{
+		font-size: 15px;
+		top: 75%;
+	}
+	
+	.ios_banner{
+		top: 82%;
+		width: 92.5%;
+	}
+	
+	.error_text{
+		position: absolute;
+		height: 60px;
+		left: -15%;
+		top: -30%;
+		padding: -10%;
+		
+		font-family: Circe Rounded;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 0.8em;
+		font-size: 250px;
+		
+		color: #FF5A63;
+		
+		animation: 150s rollin linear infinite;
+	}
+}
